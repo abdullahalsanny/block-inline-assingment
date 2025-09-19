@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block vs Inline Elements</title>
+    <style>
+        .block {
+            background-color: #222;
+            color: #ffd700;
+            margin: 8px 0;
+            padding: 8px;
+        }
+
+        .inline {
+            color: #000;
+            background-color: #d4d4aa;
+            padding: 4px;
+            margin: 2px;
+        }
+
+        .inline-block {
+            display: block;
+            margin: 6px 0;
+            color: teal;
+        }
+
+        h1 {
+            text-align: center;
+            color: navy;
+        }
+
+        .section-title {
+            color: darkgreen;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Understanding Block and Inline Elements</h1>
+
+    <h2 class="section-title">Examples of Block Elements</h2>
+    
+    <div class="block">This is a div element</div><p class="block">This is a paragraph element</p>
+    <article class="block">Article tag is also block-level</article>
+    <section class="block">This is a section tag</section>
+    <ul class="block">
+        <li>Unordered Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <ol class="block">
+        <li>Ordered 1</li>
+        <li>Ordered 2</li>
+    </ol>
+
+    <h2 class="section-title">Examples of Inline Elements</h2>
+
+    <span class="inline">This is a span</span>
+    <b class="inline">Bold Text</b>
+    <i class="inline">Italic Text</i>
+    <a href="#" class="inline">Link</a>
+    <strong class="inline">Strong tag</strong>
+    <em class="inline">Emphasized</em>
+
+    <h2 class="section-title">Converted Inline to Block</h2>
+
+    <span class="inline-block">Span as block</span>
+    <a href="#" class="inline-block">Link as block</a>
+    <b class="inline-block">Bold as block</b>
+
+    <h2 class="section-title">Converted Block to Inline</h2>
+
+    <div style="display: inline; background: #ccc; padding: 4px;">Div as inline</div>
+    <p style="display: inline; background: #ccc; padding: 4px;">Paragraph as inline</p>
+    <article style="display: inline; background: #ccc; padding: 4px;">Article as inline</article>
+
+</body>
+</html>
+```
